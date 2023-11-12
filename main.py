@@ -11,21 +11,8 @@ from sklearn.metrics import (
 
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
 
-# Assuming 'stroke' is the column you want to predict
-x = df.iloc[:, :-1]  # Features
-y = df.iloc[:, -1] 
+df['gender'], genders = pd.factorize(df['gender_code'])
 
-# Split the dataset into training and testing sets
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
+st.write(df)
 
-# Build a Gaussian Naive Bayes Classifier
-model = GaussianNB()
 
-# Model training
-model.fit(x_train, y_train)
-
-# Predict Output
-y_pred = model.predict(x_test)
-
-# Evaluate the model
-accuracy = accuracy_score(y_test, y_pred)
