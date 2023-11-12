@@ -46,10 +46,12 @@ model.fit(x_train, y_train)
 
 # create x_test
 with st.form("stroke_form"):
+    '## Stroke Probability Quiz'
     st.selectbox(
         'What is your gender?',
         genders
     )
+    st.number_input('What is your age?', min_value = 0)
     st.selectbox(
         'Have you ever been married?',
         married
