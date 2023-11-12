@@ -11,6 +11,7 @@ from sklearn.metrics import (
 
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
 
+# clean dataframe
 df['gender_code'], genders = pd.factorize(df['gender'])
 df['married_code'], married = pd.factorize(df['ever_married'])
 df['work_code'], works = pd.factorize(df['work_type'])
@@ -21,6 +22,8 @@ columns_to_drop = ['gender', 'ever_married', 'work_type', 'Residence_type', 'smo
 df = df.drop(columns=columns_to_drop)
 
 df = df.dropna()
+
+st.write(genders)
 
 # Assuming 'stroke' is the column you want to predict
 x = df.drop('stroke', axis=1)  # Features
