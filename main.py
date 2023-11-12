@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 # read in data
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
@@ -79,6 +80,8 @@ with st.form("stroke_form"):
         prediction = model.predict(user_data)
 
         '#### Prediction:'
+        accuracy = accuracy_score(y_test, y_pred)
+        f'##### Current Model Accuracy: {accuracy}'
         if prediction[0] == 1:
             st.write('You have a high probability of having a stroke.')
         else:
