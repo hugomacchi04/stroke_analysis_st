@@ -47,33 +47,30 @@ model.fit(x_train, y_train)
 # create x_test
 with st.form("stroke_form"):
     '## Stroke Probability Quiz'
-    st.selectbox(
-        'What is your gender?',
-        genders
-    )
-    st.number_input('What is your age?', min_value = 0)
-    st.selectbox(
-        'Have you ever been married?',
-        married
-    )
-    st.selectbox(
-        'What is your work type?',
-        works
-    )
-    st.selectbox(
-        'Do you live in an urban or rural area?',
-        residences
-    )
-    st.selectbox(
-        'Do you smoke?',
-        smokes[:-1]
-    )
+    gender = st.selectbox('What is your gender?', genders)
+    age = st.number_input('What is your age?', min_value=0)
+    married_status = st.selectbox('Have you ever been married?', married)
+    work_type = st.selectbox('What is your work type?', works)
+    residence_type = st.selectbox('Do you live in an urban or rural area?', residences)
+    smoking_status = st.selectbox('Do you smoke?', smokes[:-1])
 
     
     submitted = st.form_submit_button("Submit")
     if submitted:
-        st.success("Response successfully submitted")
+        gender_code = genders.get_loc(gender)
+        married_code = married.get_loc(married_status)
+        work_code = works.get_loc(work_type)
+        residence_code = residences.get_loc(residence_type)
+        smoking_code = smokes.get_loc(smoking_status)
 
+        user_data = pd.DataFrame([[gender_code, age, married_code, work_code, residence_code, smoking_code]], columns=features)
 
+        prediction = model.predict(user_data)
+
+        st.subheader('Prediction:')
+        if prediction[0] == 1:
+            st.write('The model predicts that you might have a stroke.')
+        else:
+            st.write('The model predicts that you might not have a stroke.')
 
 
