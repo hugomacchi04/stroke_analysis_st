@@ -82,7 +82,7 @@ with st.form("stroke_form"):
         '#### Prediction:'
         y_pred = model.predict(x_test)
         accuracy = accuracy_score(y_test, y_pred)
-        f'##### Current Model Accuracy: {accuracy}'
+        f'##### Current Model Accuracy: round({accuracy}, 2)'
         if prediction[0] == 1:
             st.write('You have a high probability of having a stroke.')
         else:
