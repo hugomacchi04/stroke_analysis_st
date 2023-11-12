@@ -20,6 +20,8 @@ df['smoking_code'], smokes = pd.factorize(df['smoking_status'])
 columns_to_drop = ['gender', 'ever_married', 'work_type', 'Residence_type', 'smoking_status']
 df = df.drop(columns=columns_to_drop)
 
+df = df.dropna()
+
 # Assuming 'stroke' is the column you want to predict
 x = df.drop('stroke', axis=1)  # Features
 y = df['stroke']  # Target variable
