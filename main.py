@@ -11,7 +11,7 @@ from sklearn.metrics import (
 
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
 
-df['gender'], genders = pd.factorize(df['gender_code'])
+df['gender_code'], genders = pd.factorize(df['gender'])
 
 st.write(df)
 
