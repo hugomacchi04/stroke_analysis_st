@@ -27,8 +27,6 @@ df['work_code'], works = pd.factorize(df['work_type'])
 df['residence_code'], residences = pd.factorize(df['Residence_type'])
 df['smoking_code'], smokes = pd.factorize(df['smoking_status'])
 
-df = df.drop('id')
-
 columns_to_drop = ['gender', 'ever_married', 'work_type', 'Residence_type', 'smoking_status']
 df = df.drop(columns=columns_to_drop)
 
@@ -79,7 +77,7 @@ with st.form("stroke_form"):
         else:
             heart_disease = 0
 
-        user_data = pd.DataFrame([[gender_code, age, hypertension, heart_disease, married_code, work_code, residence_code, average_glucose, bmi, smoking_code]], columns=x.columns)
+        user_data = pd.DataFrame([[1, gender_code, age, hypertension, heart_disease, married_code, work_code, residence_code, average_glucose, bmi, smoking_code]], columns=x.columns)
 
         prediction = model.predict(user_data)
 
