@@ -6,6 +6,8 @@ from sklearn.naive_bayes import GaussianNB
 # read in data
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
 
+df = df.drop('id)
+             
 # change df values
 df.loc[df["work_type"] == "Govt_job", "work_type"] = "Government"
 df.loc[df["work_type"] == "children", "work_type"] = "Children"
@@ -72,7 +74,7 @@ with st.form("stroke_form"):
         else:
             heart_disease = 0
 
-        user_data = pd.DataFrame([[1, gender_code, age, hypertension, heart_disease, married_code, work_code, residence_code, average_glucose, bmi, smoking_code]], columns=x.columns)
+        user_data = pd.DataFrame([[gender_code, age, hypertension, heart_disease, married_code, work_code, residence_code, average_glucose, bmi, smoking_code]], columns=x.columns)
 
         prediction = model.predict(user_data)
 
