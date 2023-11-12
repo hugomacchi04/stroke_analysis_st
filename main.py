@@ -63,7 +63,7 @@ with st.form("stroke_form"):
         residence_code = residences.get_loc(residence_type)
         smoking_code = smokes.get_loc(smoking_status)
 
-        user_data = pd.DataFrame([[gender_code, age, married_code, work_code, residence_code, smoking_code]], columns=features)
+        user_data = pd.DataFrame([[gender_code, age, married_code, work_code, residence_code, smoking_code]], columns=x)
 
         prediction = model.predict(user_data)
 
