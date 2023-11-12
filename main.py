@@ -1,15 +1,9 @@
 import streamlit as st
 import pandas as pd
-from sklearn.metrics import r2_score
-import numpy
+from sklearn.model_selection import train_test_split
 
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
 
-train = df[:80]
-test = df[80:]
+train, test = train_test_split(df, test_size=0.2)
 
-mymodel = numpy.poly1d(numpy.polyfit(train, train, 4))
-
-r2 = r2_score(test, mymodel(test))
-
-st.write(r2)
+st.write(test)
