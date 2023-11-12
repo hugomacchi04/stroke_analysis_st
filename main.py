@@ -80,6 +80,7 @@ with st.form("stroke_form"):
         prediction = model.predict(user_data)
 
         '#### Prediction:'
+        y_pred = model.predict(x_test)
         accuracy = accuracy_score(y_test, y_pred)
         f'##### Current Model Accuracy: {accuracy}'
         if prediction[0] == 1:
