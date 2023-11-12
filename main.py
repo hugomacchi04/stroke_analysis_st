@@ -6,7 +6,7 @@ from sklearn.naive_bayes import GaussianNB
 # read in data
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
 
-df = df.drop('id')
+df = df.drop('id', axis=1)
              
 # change df values
 df.loc[df["work_type"] == "Govt_job", "work_type"] = "Government"
