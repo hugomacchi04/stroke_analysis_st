@@ -17,7 +17,7 @@ train, test = train_test_split(df, test_size=0.2)
 model = GaussianNB()
 
 # Model training
-model.fit(train, train)
+model.fit(train)
 
 # Predict Output
 predicted = model.predict(test)
