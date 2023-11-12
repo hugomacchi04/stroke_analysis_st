@@ -44,7 +44,7 @@ model = GaussianNB()
 # model training
 model.fit(x_train, y_train)
 
-# create x_test
+# create test
 with st.form("stroke_form"):
     '## Stroke Probability Quiz'
     gender = st.selectbox('What is your gender?', genders)
@@ -81,10 +81,10 @@ with st.form("stroke_form"):
 
         prediction = model.predict(user_data)
 
-        st.subheader('Prediction:')
+        '#### Prediction:'
         if prediction[0] == 1:
-            st.write('The model predicts that you might have a stroke.')
+            st.write('You have a high probability of having a stroke.')
         else:
-            st.write('The model predicts that you might not have a stroke.')
+            st.write('You have a low probability of having a stroke.')
 
 
