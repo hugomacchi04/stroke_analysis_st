@@ -64,7 +64,7 @@ with st.form("stroke_form"):
     )
     st.selectbox(
         'Do you smoke?',
-        smokes
+        smokes[:-1]
     )
 
     
