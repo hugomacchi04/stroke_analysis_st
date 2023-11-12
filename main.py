@@ -13,6 +13,8 @@ df = pd.read_csv('healthcare-dataset-stroke-data.csv')
 
 # change df values
 df.loc[df["work_type"] == "Govt_job", "work_type"] = "Government"
+df.loc[df["work_type"] == "children", "work_type"] = "Children"
+df.loc[df["work_type"] == "Never_worked", "work_type"] = "Never Worked"
 
 # clean dataframe
 df['gender_code'], genders = pd.factorize(df['gender'])
