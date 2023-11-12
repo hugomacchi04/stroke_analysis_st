@@ -11,6 +11,9 @@ from sklearn.metrics import (
 
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
 
+# change df values
+df.loc[df["work_type"] == "Govt_job", "work_type"] = "Government"
+
 # clean dataframe
 df['gender_code'], genders = pd.factorize(df['gender'])
 df['married_code'], married = pd.factorize(df['ever_married'])
