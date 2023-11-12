@@ -27,6 +27,8 @@ df['work_code'], works = pd.factorize(df['work_type'])
 df['residence_code'], residences = pd.factorize(df['Residence_type'])
 df['smoking_code'], smokes = pd.factorize(df['smoking_status'])
 
+df = df.drop('id')
+
 columns_to_drop = ['gender', 'ever_married', 'work_type', 'Residence_type', 'smoking_status']
 df = df.drop(columns=columns_to_drop)
 
@@ -49,11 +51,15 @@ with st.form("stroke_form"):
     '## Stroke Probability Quiz'
     gender = st.selectbox('What is your gender?', genders)
     age = st.number_input('What is your age?', min_value=0)
+    has_hypertension = st.selectbox('Do you have hypertension?', ('Yes', 'No')
+    has_heart_disease = st.selectbox('Do you have heart disease?', ('Yes', 'No')
     married_status = st.selectbox('Have you ever been married?', married)
     work_type = st.selectbox('What is your work type?', works)
     residence_type = st.selectbox('Do you live in an urban or rural area?', residences)
+    average_glucose = st.number_input('What is your average glucose level?', min_value=0)
+    bmi = st.number_input('What is your BMI?', min_value=0)
     smoking_status = st.selectbox('Do you smoke?', smokes[:-1])
-
+    
     
     submitted = st.form_submit_button("Submit")
     if submitted:
@@ -63,7 +69,17 @@ with st.form("stroke_form"):
         residence_code = residences.get_loc(residence_type)
         smoking_code = smokes.get_loc(smoking_status)
 
-        user_data = pd.DataFrame([[gender_code, age, married_code, work_code, residence_code, smoking_code]], columns=x.columns)
+        if has_hypertension == "Yes":
+            hypertension = 1
+        else:
+            hypertension = 0
+
+        if has_heart_disease == "Yes":
+            heart_disease = 1
+        else:
+            heart_disease = 0
+
+        user_data = pd.DataFrame([[gender_code, age, hypertension, heart_disease, married_code, work_code, residence_code, average_glucose, bmi, smoking_code]], columns=x.columns)
 
         prediction = model.predict(user_data)
 
