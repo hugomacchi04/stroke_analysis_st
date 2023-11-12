@@ -51,8 +51,8 @@ with st.form("stroke_form"):
     '## Stroke Probability Quiz'
     gender = st.selectbox('What is your gender?', genders)
     age = st.number_input('What is your age?', min_value=0)
-    has_hypertension = st.selectbox('Do you have hypertension?', ('Yes', 'No')
-    has_heart_disease = st.selectbox('Do you have heart disease?', ('Yes', 'No')
+    has_hypertension = st.selectbox('Do you have hypertension?', ('Yes', 'No'))
+    has_heart_disease = st.selectbox('Do you have heart disease?', ('Yes', 'No'))
     married_status = st.selectbox('Have you ever been married?', married)
     work_type = st.selectbox('What is your work type?', works)
     residence_type = st.selectbox('Do you live in an urban or rural area?', residences)
