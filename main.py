@@ -21,7 +21,3 @@ model.fit(train, train)
 
 # Predict Output
 predicted = model.predict(test)
-accuracy = accuracy_score(predicted, test)
-f1 = f1_score(predicted, test, average="weighted")
-
-st.write(accuracy)
