@@ -41,6 +41,22 @@ with st.form("stroke_form"):
         'What is your gender?',
         genders
     )
+    st.selectbox(
+        'Have you ever been married?',
+        married
+    )
+    st.selectbox(
+        'What is your work type?',
+        works
+    )
+    st.selectbox(
+        'Do you live in an urban or rural area?',
+        residences
+    )
+    st.selectbox(
+        'Do you smoke?',
+        smokes
+    )
 
     
     submitted = st.form_submit_button("Submit")
