@@ -11,6 +11,20 @@ from sklearn.metrics import (
 
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
 
+# User input form
+gender = st.selectbox('Gender', df['gender'].unique())
+married = st.selectbox('Ever Married', df['ever_married'].unique())
+work_type = st.selectbox('Work Type', df['work_type'].unique())
+residence_type = st.selectbox('Residence Type', df['Residence_type'].unique())
+smoking_status = st.selectbox('Smoking Status', df['smoking_status'].unique())
+
+# Convert user input to match the factorized values
+gender_code = genders.get_loc(gender)
+married_code = married.get_loc(married)
+work_code = works.get_loc(work_type)
+residence_code = residences.get_loc(residence_type)
+smoking_code = smokes.get_loc(smoking_status)
+
 df['gender_code'], genders = pd.factorize(df['gender'])
 df['married_code'], married = pd.factorize(df['ever_married'])
 df['work_code'], works = pd.factorize(df['work_type'])
@@ -34,20 +48,6 @@ model = GaussianNB()
 
 # Model training
 model.fit(x_train, y_train)
-
-# User input form
-gender = st.selectbox('Gender', df['gender'].unique())
-married = st.selectbox('Ever Married', df['ever_married'].unique())
-work_type = st.selectbox('Work Type', df['work_type'].unique())
-residence_type = st.selectbox('Residence Type', df['Residence_type'].unique())
-smoking_status = st.selectbox('Smoking Status', df['smoking_status'].unique())
-
-# Convert user input to match the factorized values
-gender_code = genders.get_loc(gender)
-married_code = married.get_loc(married)
-work_code = works.get_loc(work_type)
-residence_code = residences.get_loc(residence_type)
-smoking_code = smokes.get_loc(smoking_status)
 
 # Make a prediction
 user_data = pd.DataFrame([[gender_code, married_code, work_code, residence_code, smoking_code]], columns=features)
