@@ -2,13 +2,8 @@ import streamlit as st
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
-from sklearn.metrics import (
-    accuracy_score,
-    confusion_matrix,
-    ConfusionMatrixDisplay,
-    f1_score,
-)
 
+# read in data
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
 
 # change df values
