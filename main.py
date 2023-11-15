@@ -37,13 +37,13 @@ y = df['stroke']  # stroke
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 
 # build a Logistic Regression Classifier
-logistic_model = LogisticRegression(random_state=42)
+model = LogisticRegression(random_state=42)
 
 # train the model
-logistic_model.fit(x_train, y_train)
+model.fit(x_train, y_train)
 
 # write accuracy
-y_pred = logistic_model.predict(x_test)
+y_pred = model.predict(x_test)
 accuracy = accuracy_score(y_test, y_pred)
 f'##### Current Model Accuracy: {round(accuracy, 2)}'
 
