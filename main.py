@@ -34,13 +34,16 @@ x = df.drop('stroke', axis=1)  # features
 y = df['stroke']  # stroke
 
 # split the dataset into training and testing sets
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=7)
 
 # build a Gaussian Naive Bayes Classifier
 model = GaussianNB()
 
 # model training
 model.fit(x_train, y_train)
+
+accuracy = accuracy_score(y_test, y_pred)
+f'##### Current Model Accuracy: {round(accuracy, 2)}'
 
 # create test
 with st.form("stroke_form"):
@@ -81,8 +84,6 @@ with st.form("stroke_form"):
 
         '### Prediction:'
         y_pred = model.predict(x_test)
-        accuracy = accuracy_score(y_test, y_pred)
-        f'##### Current Model Accuracy: {round(accuracy, 2)}'
         if prediction[0] == 1:
             st.write('You have a high probability of having a stroke.')
         else:
