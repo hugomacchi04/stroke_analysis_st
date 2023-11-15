@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, mean_absolute_error
+from sklearn.metrics import accuracy_score, r2_score
 
 # read in data
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
@@ -45,7 +45,7 @@ model.fit(x_train, y_train)
 y_pred = model.predict(x_test)
 
 # Calculate the F1 score
-mae = mean_absolute_error(y_test, y_pred)
+mae = r2_score(y_test, y_pred)
 
 st.write(mae)
 
