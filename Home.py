@@ -1,6 +1,6 @@
 import streamlit as st
 
-'## What is a stroke?
+'## What is a stroke?'
 
 '## What are symptoms of a stroke?'
 
