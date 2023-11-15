@@ -1,10 +1,8 @@
 import streamlit as st
 
-col1, col2 = st.columns([1, 9])
+col1 = st.columns(1)
 
 with col1:
-  st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
-with col2:
   st.image('line.png')
     
 '## Personal History'
