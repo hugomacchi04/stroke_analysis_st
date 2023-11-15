@@ -41,7 +41,14 @@ model = LogisticRegression(random_state=42)
 # train the model
 model.fit(x_train, y_train)
 
-st.image('line.png')
+col1, col2, col3 = st.columns(3)
+
+with col2:
+  col4, col5, col6 = st.columns(3)
+  with col5:
+    st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
+
+st.image('line2.png')
 
 # create test
 with st.form("stroke_form"):
@@ -86,11 +93,5 @@ with st.form("stroke_form"):
         else:
             st.write('You have a low probability of having a stroke.')
 
-st.image('line.png')
+st.image('line2.png')
 
-col1, col2, col3 = st.columns(3)
-
-with col2:
-  col4, col5, col6 = st.columns(3)
-  with col5:
-    st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
