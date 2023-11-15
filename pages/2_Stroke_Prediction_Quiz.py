@@ -44,9 +44,9 @@ model.fit(x_train, y_train)
 
 col1, col2, col3 = st.columns(3)
 
-with col2:
+with col1:
   col4, col5, col6 = st.columns(3)
-  with col5:
+  with col4:
     st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
 
 # create test
