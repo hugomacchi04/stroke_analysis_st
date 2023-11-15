@@ -95,4 +95,4 @@ with st.form("stroke_form"):
 # write accuracy
 y_pred = model.predict(x_test)
 accuracy = accuracy_score(y_test, y_pred)
-f'##### Current Model Accuracy: {round(accuracy, 2)}'
+f'##### Current Prediction Accuracy: {round(accuracy, 2) * 100}%'
