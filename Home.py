@@ -8,9 +8,9 @@ with col1:
     st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
 
 '## What is a stroke?'
-st.write('Stroke accounts for 5% of annual deaths in the United States, equating to 1 in 20 fatalities.')
+st.write('Strokes account for 5% of annual deaths in the United States, equating to 1 in 20 fatalities.')
 st.write('A stroke may happen when there is a blockage in the blood flow to the brain or if there is sudden bleeding within the brain. There are two types of strokes: ischemic strokes and hemorrhagic strokes.')
-st.write('Ischemic strokes are the most common kind of strokes. These occur when blood flow to the brain is blocked. Hemorrhagic strokes occur when the brain bleeds; this usually involves a blood vessel bursting, creating pressure in the nearby brain tissue.')
+st.write('Ischemic strokes are the most common kind of strokes; these occur when blood flow to the brain is blocked. Hemorrhagic strokes occur when the brain bleeds; this usually involves a blood vessel bursting, creating pressure in the nearby brain tissue.')
 
 '## What are symptoms of a stroke?'
 st.write('•  Sudden numbness or weakness in the face, arm, or leg, especially on one side of the body.')
@@ -20,8 +20,8 @@ st.write('•  Sudden trouble walking, dizziness, loss of balance, or lack of co
 st.write('•  Sudden severe headache with no known cause.')
 
 '## Who has a higher probability of having a stroke?'
-st.write('There are a slew of factors that contribute to a higher likelihood of having a stroke. Some of these factors can be changed whereas others cannot.')
-st.write('Some factors include gender, race, age, high blood pressure, heart disease, smoking, obesity and so on. Men are more likely to have a stroke especially as they get older. There is an even higher risk in African Americans due to high blood pressure.')
+st.write('TThere are several factors that contribute to a higher likelihood of having a stroke. Some of these factors can be changed, while others cannot.')
+st.write('These factors include gender, race, age, high blood pressure, heart disease, smoking, obesity, and so on. Men, especially as they age, are more likely to have a stroke. There is an even higher risk among African Americans due to high blood pressure.')
 
 '## What are prevention methods?'
 st.write('As mentioned in the previous section, some stroke factors can be eliminated with the right lifestyle choices. Here are a few prevention methods:')
