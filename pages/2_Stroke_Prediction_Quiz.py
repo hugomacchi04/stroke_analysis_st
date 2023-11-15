@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, precision_score
 
 # read in data
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
@@ -41,14 +40,6 @@ model = LogisticRegression(random_state=42)
 
 # train the model
 model.fit(x_train, y_train)
-
-y_pred = model.predict(x_test)
-
-# Calculate the F1 score
-f1 = precision_score(y_test, y_pred)
-
-st.write(f1)
-
 
 st.image('line.png')
 
