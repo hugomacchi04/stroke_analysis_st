@@ -48,7 +48,7 @@ with col2:
   with col5:
     st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
 
-st.image('line2.png')
+st.image('line.png')
 
 # create test
 with st.form("stroke_form"):
@@ -93,5 +93,4 @@ with st.form("stroke_form"):
         else:
             st.write('You have a low probability of having a stroke.')
 
-st.image('line2.png')
 
