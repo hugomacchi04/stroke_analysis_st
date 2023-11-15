@@ -11,7 +11,8 @@ st.write('Witnessing the impact on both my grandpa and grandma, I do not want an
 
 '## How the quiz works'
 
-st.write('I created a linear regression model using the following Kaggle dataset: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset. The model creates a prediction based on the values inputted by the user.')
+st.write('I created a linear regression model using the following Kaggle dataset: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset.')
+st.write('The dataset is split into two separate datasets: test and train. The model then creates a prediction based on the values inputted by the user.')
 
 col1, col2, col3 = st.columns(3)
 
