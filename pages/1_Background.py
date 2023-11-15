@@ -4,6 +4,8 @@ col1, col2 = st.columns([1, 9])
 
 with col1:
   st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
+with col2:
+  st.image('line.png')
     
 '## Personal History'
 st.write('In late May 2023, my grandfather suffered a hemorrhagic stroke, displaying classic symptoms that, unfortunately, went unrecognized by my family due to our lack of awareness. A month prior, he began experiencing double vision in both eyes, a sign we now know we should have taken more seriously. About a month before he had the stroke, my grandpa started having double vision in both eyes. The doctors noticed blood, but assumed that it would eventually reabsorb back into the brain.')
