@@ -45,7 +45,7 @@ model.fit(x_train, y_train)
 y_pred = model.predict(x_test)
 
 # Calculate the F1 score
-mae = mean_absolute_error(y_true, y_pred)
+mae = mean_absolute_error(y_test, y_pred)
 
 st.write(mae)
 
