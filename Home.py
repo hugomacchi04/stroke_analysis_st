@@ -29,6 +29,11 @@ st.write('•  Choose healthy foods')
 st.write('•  Excersice regularly')
 st.write('•  Avoid smoking')
 
+'## Personal History'
+st.write('At the end of May 2023, my grandpa has a hemorrhagic stroke. In retrospect, he displayed all of the typic stroke symptoms, however my family and I were uneducated about them at the time. About a month before he had the stroke, my grandpa started having double vision in both eyes. The doctors noticed blood, but assumed that it was eventually reabsorb back into the brain.')
+
+
+
 '### Additional Resources'
 st.write('CDC Information on Strokes: https://www.cdc.gov/stroke/index.htm')
 st.write('American Stroke Association: https://www.stroke.org/en/')
