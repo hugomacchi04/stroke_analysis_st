@@ -87,11 +87,6 @@ with st.form("stroke_form"):
         else:
             st.write('You have a low probability of having a stroke.')
 
-# write accuracy
-y_pred = model.predict(x_test)
-accuracy = accuracy_score(y_test, y_pred)
-f'##### Current Prediction Accuracy: {round(accuracy, 2) * 100}%'
-
 col1, col2, col3 = st.columns(3)
 
 with col2:
