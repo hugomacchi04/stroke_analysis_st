@@ -44,6 +44,8 @@ model.fit(x_train, y_train)
 
 col1, col2, col3 = st.columns(3)
 
+with col1:
+  st.image('G060_1-506.png')
 with col2:
   col4, col5, col6 = st.columns(3)
   with col5:
