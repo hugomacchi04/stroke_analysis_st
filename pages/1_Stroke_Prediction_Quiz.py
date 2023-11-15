@@ -42,6 +42,11 @@ model = LogisticRegression(random_state=42)
 # train the model
 model.fit(x_train, y_train)
 
+col1, col2, col3 = st.columns(3)
+
+with col1:
+  st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
+
 # write accuracy
 y_pred = model.predict(x_test)
 accuracy = accuracy_score(y_test, y_pred)
