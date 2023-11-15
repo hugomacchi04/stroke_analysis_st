@@ -1,12 +1,5 @@
 import streamlit as st
 
-col1, col2, col3 = st.columns(3)
-
-with col2:
-  col4, col5, col6 = st.columns(3)
-  with col5:
-    st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
-
 st.image('line.png')
 
 '## What is a stroke?'
@@ -41,5 +34,12 @@ st.write('https://www.nhlbi.nih.gov/health/stroke')
 st.write('https://www.cdc.gov/stroke/signs_symptoms.htm')
 st.write('https://www.hopkinsmedicine.org/health/conditions-and-diseases/stroke')
 st.write('https://www.cdc.gov/stroke/prevention.htm')
+
+col1, col2, col3 = st.columns(3)
+
+with col2:
+  col4, col5, col6 = st.columns(3)
+  with col5:
+    st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
 
 
