@@ -30,8 +30,12 @@ st.write('•  Excersice regularly')
 st.write('•  Avoid smoking')
 
 '## Personal History'
-st.write('At the end of May 2023, my grandpa has a hemorrhagic stroke. In retrospect, he displayed all of the typic stroke symptoms, however my family and I were uneducated about them at the time. About a month before he had the stroke, my grandpa started having double vision in both eyes. The doctors noticed blood, but assumed that it was eventually reabsorb back into the brain.')
-
+st.write('At the end of May 2023, my grandpa had a hemorrhagic stroke. In retrospect, he displayed all of the typical stroke symptoms, however my family and I were uneducated about them at the time. About a month before he had the stroke, my grandpa started having double vision in both eyes. The doctors noticed blood, but assumed that it was eventually reabsorb back into the brain.')
+st.write('Towards the end of May, he developed a severe migraine out of nowhere. My grandparents decided to give it few days to resolve itself, but the turning point was when my grandpa forgot how to dress himself for work and dropped his sandwich unknowingly while walking into the office. After arriving to the ER, he was eventually given surgery to remove some of the blood on one side of his head. My grandpa spent about two weeks in the ICU in which he seemed to be in a vegetative state. Though he woke up and mumbled a few times, the doctors were not very optomistic. Therefore, we arranged a funeral and decided to send him to hospice.')
+st.write('This is where the story takes a turn. While in hospice, he woke up, started talking, swallowed food for the first time and moved his supposedly paralyzed arm and leg. We could not believe it! After a week in hospice, my grandpa started therapy and was back home within a month.')
+st.write('Nowdays he is able to walk on his own and his personality remains the same. However, any little infection such as a cold or flu will cause symptoms to pop up again. I am extremely grateful that this situation ended positively, but I cannot help but wonder what would have happened if the symptoms were noticed sooner. Could this have been prevented?')
+st.wrtie('After seeing how much this has affected not only my grandpa, but my grandma as well, I do not want anyone to go through something like this. Therefore, I hope to create awareness of the symptoms and signs of strokes.')
+      
 
 
 '### Additional Resources'
