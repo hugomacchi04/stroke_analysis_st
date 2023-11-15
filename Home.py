@@ -20,7 +20,7 @@ st.write('Some factors include gender, race, age, high blood pressure, heart dis
 st.write('As mentioned in the previous section, some stroke factors can be eliminated with the right lifestyle choices. Here are a few prevention methods:')
 st.write('•  Choose healthy foods')
 st.write('•  Excersice regularly')
-st.write('•  Don't smoke')
+st.write('•  Avoid smoking')
 
 '### Additional Resources'
 
