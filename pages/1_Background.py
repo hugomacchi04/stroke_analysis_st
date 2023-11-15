@@ -9,3 +9,9 @@ st.write('This is where the story takes a turn. While in hospice, he woke up, st
 st.write('Nowdays he is able to walk on his own and his personality remains the same. However, any minor infection triggers symptoms. While grateful for the positive outcome, I cannot help but wonder if early recognition could have prevented this.')
 st.write('Witnessing the impact on both my grandpa and grandma, I do not want anyone to go through something like this. Therefore, I hope to create awareness of the symptoms and signs of a stroke with this app!')
   
+col1, col2, col3 = st.columns(3)
+
+with col2:
+  col4, col5, col6 = st.columns(3)
+  with col5:
+    st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
