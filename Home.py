@@ -26,7 +26,7 @@ st.write('•  Avoid smoking')
 st.write('CDC Information on Strokes: https://www.cdc.gov/stroke/index.htm')
 st.write('American Stroke Association: https://www.stroke.org/en/')
 
-
+st.markdown("""---""")
 '##### References'
 st.write('https://www.nhlbi.nih.gov/health/stroke')
 st.write('https://www.cdc.gov/stroke/signs_symptoms.htm')
