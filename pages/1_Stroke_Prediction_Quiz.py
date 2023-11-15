@@ -51,7 +51,7 @@ with col2:
 
 # create test
 with st.form("stroke_form"):
-    '## Stroke Probability Quiz'
+    '## Stroke Prediction Quiz'
     gender = st.selectbox('What is your gender?', genders)
     age = st.number_input('What is your age?', min_value=0)
     has_hypertension = st.selectbox('Do you have hypertension?', ('Yes', 'No'))
