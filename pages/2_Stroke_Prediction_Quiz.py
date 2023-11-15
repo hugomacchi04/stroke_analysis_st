@@ -87,6 +87,8 @@ with st.form("stroke_form"):
         else:
             st.write('You have a low probability of having a stroke.')
 
+st.image('line.png')
+
 col1, col2, col3 = st.columns(3)
 
 with col2:
