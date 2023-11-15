@@ -34,6 +34,7 @@ st.write('https://www.nhlbi.nih.gov/health/stroke')
 st.write('https://www.cdc.gov/stroke/signs_symptoms.htm')
 st.write('https://www.hopkinsmedicine.org/health/conditions-and-diseases/stroke')
 st.write('https://www.cdc.gov/stroke/prevention.htm')
+st.markdown("""---""")
 
 col1, col2, col3 = st.columns(3)
 
