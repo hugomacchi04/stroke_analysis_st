@@ -91,3 +91,10 @@ with st.form("stroke_form"):
 y_pred = model.predict(x_test)
 accuracy = accuracy_score(y_test, y_pred)
 f'##### Current Prediction Accuracy: {round(accuracy, 2) * 100}%'
+
+col1, col2, col3 = st.columns(3)
+
+with col2:
+  col4, col5, col6 = st.columns(3)
+  with col5:
+    st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
