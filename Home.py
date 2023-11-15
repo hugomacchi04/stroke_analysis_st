@@ -17,10 +17,16 @@ st.write('There are a slew of factors that contribute to a higher likelihood of 
 st.write('Some factors include gender, race, age, high blood pressure, heart disease, smoking, obesity and so on. Men are more likely to have a stroke especially as they get older. There is an even higher risk in African Americans due to high blood pressure.')
 
 '## What are prevention methods?'
+st.write('As mentioned in the previous section, some stroke factors can be eliminated with the right lifestyle choices. Here are a few prevention methods:')
+st.write('•  Choose healthy foods')
+st.write('•  Excersice regularly')
+st.write('•  Don't smoke')
 
 '### Additional Resources'
 
 '##### References'
 st.write('https://www.nhlbi.nih.gov/health/stroke')
 st.write('https://www.cdc.gov/stroke/signs_symptoms.htm')
+st.write('https://www.hopkinsmedicine.org/health/conditions-and-diseases/stroke')
+st.write('https://www.cdc.gov/stroke/prevention.htm')
 
