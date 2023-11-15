@@ -8,7 +8,11 @@ st.write('Towards the end of May, he developed a severe migraine out of nowhere.
 st.write('This is where the story takes a turn. While in hospice, he woke up, started talking, swallowed food for the first time and moved his supposedly paralyzed arm and leg. We could not believe it! After a week in hospice, my grandpa started therapy and was back home within a month.')
 st.write('Nowdays he is able to walk on his own and his personality remains the same. However, any minor infection triggers symptoms. While grateful for the positive outcome, I cannot help but wonder if early recognition could have prevented this.')
 st.write('Witnessing the impact on both my grandpa and grandma, I do not want anyone to go through something like this. Therefore, I hope to create awareness of the symptoms and signs of a stroke with this app!')
-  
+
+'## How the quiz works'
+
+st.write('I created a linear regression model using the following Kaggle dataset: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset. The model creates a prediction based on the values inputted by the user.')
+
 col1, col2, col3 = st.columns(3)
 
 with col2:
