@@ -1,6 +1,13 @@
 import streamlit as st
 
-st.image('line.png')
+col1, col2, col3 = st.columns(3)
+
+with col2:
+  col4, col5, col6 = st.columns(3)
+  with col5:
+    st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
+
+st.image('line2.png')
     
 '## Personal History'
 st.write('In late May 2023, my grandfather suffered a hemorrhagic stroke, displaying classic symptoms that, unfortunately, went unrecognized by my family due to our lack of awareness. A month prior, he began experiencing double vision in both eyes, a sign we now know we should have taken more seriously. About a month before he had the stroke, my grandpa started having double vision in both eyes. The doctors noticed blood, but assumed that it would eventually reabsorb back into the brain.')
@@ -14,11 +21,4 @@ st.write('Witnessing the impact on both my grandpa and grandma, I do not want an
 st.write('I created a linear regression model using the following Kaggle dataset: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset.')
 st.write('First, I read the dataset into a Pandas dataframe. To clean the data, I dropped the ID column as well as null values and replaced strings with numerical values. The dataset was then split into two separate datasets: test and train. After the model is trained, it can be used to make predictions. It generates predictions based on the values inputted by the user. The model currently has a 95% accuracy rate.')
 
-st.image('line.png')
-
-col1, col2, col3 = st.columns(3)
-
-with col2:
-  col4, col5, col6 = st.columns(3)
-  with col5:
-    st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
+st.image('line2.png')
