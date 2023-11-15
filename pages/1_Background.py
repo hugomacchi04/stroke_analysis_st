@@ -12,7 +12,7 @@ st.write('Witnessing the impact on both my grandpa and grandma, I do not want an
 '## How the quiz works'
 
 st.write('I created a linear regression model using the following Kaggle dataset: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset.')
-st.write('The dataset is split into two separate datasets: test and train. The model then creates a prediction based on the values inputted by the user.')
+st.write('First, I read the dataset in as a Pandas dataframe. To clean the data, I dropped the ID column as well as null values and replaced strings with numerical values. The dataset was then split into two separate datasets: test and train. After the model was trained, it can then be used to create predictions. It creates the prediction from the values inputted by the user. The model is currently at 95% accuracy.')
 
 col1, col2, col3 = st.columns(3)
 
