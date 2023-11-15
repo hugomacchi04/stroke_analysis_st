@@ -23,6 +23,9 @@ st.write('•  Excersice regularly')
 st.write('•  Avoid smoking')
 
 '### Additional Resources'
+st.write('CDC Information on Strokes: https://www.cdc.gov/stroke/index.htm')
+st.write('American Stroke Association: https://www.stroke.org/en/')
+
 
 '##### References'
 st.write('https://www.nhlbi.nih.gov/health/stroke')
