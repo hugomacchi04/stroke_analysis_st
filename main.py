@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
 
 # read in data
 df = pd.read_csv('healthcare-dataset-stroke-data.csv')
@@ -36,14 +37,14 @@ y = df['stroke']  # stroke
 # split the dataset into training and testing sets
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 
-# build a Gaussian Naive Bayes Classifier
-model = GaussianNB()
+# Build a Logistic Regression Classifier
+logistic_model = LogisticRegression(random_state=42)
 
-# model training
-model.fit(x_train, y_train)
+# Model training
+logistic_model.fit(x_train, y_train)
 
-# model accuracy
-y_pred = model.predict(x_test)
+# Predict Output
+y_pred = logistic_model.predict(x_test)
 accuracy = accuracy_score(y_test, y_pred)
 f'##### Current Model Accuracy: {round(accuracy, 2)}'
 
