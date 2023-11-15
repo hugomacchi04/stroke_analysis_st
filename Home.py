@@ -13,8 +13,8 @@ st.write('•  Sudden trouble walking, dizziness, loss of balance, or lack of co
 st.write('•  Sudden severe headache with no known cause.')
 
 '## Who has a higher probability of having a stroke?'
-st.write('There are a slew of factors that contribute to a higher likelihood of having a stroke. Some of these factors can be changes whereas others cannot.')
-st.write('Some factors include gender, race, age, high blood pressure, heart disease, smoking, obesity and so on. Men are more likely to have a stroke, especially the older they get. The is an even higher risk in African Americans due to high blood pressure.')
+st.write('There are a slew of factors that contribute to a higher likelihood of having a stroke. Some of these factors can be changed whereas others cannot.')
+st.write('Some factors include gender, race, age, high blood pressure, heart disease, smoking, obesity and so on. Men are more likely to have a stroke especially as they get older. There is an even higher risk in African Americans due to high blood pressure.')
 
 '## What are prevention methods?'
 
