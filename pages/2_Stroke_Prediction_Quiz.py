@@ -41,8 +41,6 @@ model = LogisticRegression(random_state=42)
 # train the model
 model.fit(x_train, y_train)
 
-st.image('line.png')
-
 # create test
 with st.form("stroke_form"):
     '## Stroke Prediction Quiz'
