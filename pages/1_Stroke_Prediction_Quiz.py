@@ -49,11 +49,6 @@ with col2:
   with col5:
     st.image('4da0cbeab3bad859bc79b726c136725f-ribbon-stroke-health.png')
 
-# write accuracy
-y_pred = model.predict(x_test)
-accuracy = accuracy_score(y_test, y_pred)
-f'##### Current Model Accuracy: {round(accuracy, 2)}'
-
 # create test
 with st.form("stroke_form"):
     '## Stroke Probability Quiz'
@@ -96,3 +91,8 @@ with st.form("stroke_form"):
             st.write('You have a high probability of having a stroke.')
         else:
             st.write('You have a low probability of having a stroke.')
+
+# write accuracy
+y_pred = model.predict(x_test)
+accuracy = accuracy_score(y_test, y_pred)
+f'##### Current Model Accuracy: {round(accuracy, 2)}'
