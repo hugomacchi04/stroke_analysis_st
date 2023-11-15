@@ -45,7 +45,7 @@ model.fit(x_train, y_train)
 y_pred = model.predict(x_test)
 
 # Calculate the F1 score
-f1 = precision_score(y_test, y_pred, average='binary')
+f1 = precision_score(y_test, y_pred)
 
 st.write(f1)
 
