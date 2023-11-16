@@ -44,7 +44,7 @@ model.fit(x_train, y_train)
 # create test
 with st.form("stroke_form"):
     st.markdown('<p style="color:#8b0000; font-size: 36px;"><b>Stroke Prediction Quiz</b></p>', unsafe_allow_html=True)
-    '##### Answer the questions below and see if you have a greater likelihood of having a stroke.'
+    '##### Answer the questions below to determine your potential risk of experiencing a stroke.'
     gender = st.selectbox('What is your gender?', genders)
     age = st.number_input('What is your age?', min_value=0)
     has_hypertension = st.selectbox('Do you have hypertension?', ('Yes', 'No'))
@@ -85,6 +85,8 @@ with st.form("stroke_form"):
         else:
             st.write('You have a low probability of having a stroke.')
 
+st.write('Disclaimer: This quiz is designed for educational purposes to raise awareness of factors associated with strokes. It is not intended to provide a definitive or accurate prediction of an individual's likelihood of experiencing a stroke. For any health-related concerns, it is recommended to consult with a qualified healthcare professional.')
+  
 col1, col2, col3 = st.columns(3)
 
 with col2:
