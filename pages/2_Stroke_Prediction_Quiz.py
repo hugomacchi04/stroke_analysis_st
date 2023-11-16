@@ -85,7 +85,7 @@ with st.form("stroke_form"):
         else:
             st.write('You have a low probability of having a stroke.')
 
-st.write('Disclaimer: This quiz is designed for educational purposes to raise awareness of factors associated with strokes. It is not intended to provide a definitive or accurate prediction of an individual's likelihood of experiencing a stroke. For any health-related concerns, it is recommended to consult with a qualified healthcare professional.')
+st.write("""Disclaimer: This quiz is designed for educational purposes to raise awareness of factors associated with strokes. It is not intended to provide a definitive or accurate prediction of an individual's likelihood of experiencing a stroke. For any health-related concerns, it is recommended to consult with a qualified healthcare professional.""")
   
 col1, col2, col3 = st.columns(3)
 
