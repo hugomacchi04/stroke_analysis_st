@@ -43,7 +43,7 @@ model.fit(x_train, y_train)
 
 # create test
 with st.form("stroke_form"):
-    st.markdown('<p style="color:Blue; font-size: 20px;">Stroke Prediction Quiz</p>', unsafe_allow_html=True)
+    st.markdown('<p style="color:Blue; font-size: 64px;">Stroke Prediction Quiz</p>', unsafe_allow_html=True)
     gender = st.selectbox('What is your gender?', genders)
     age = st.number_input('What is your age?', min_value=0)
     has_hypertension = st.selectbox('Do you have hypertension?', ('Yes', 'No'))
