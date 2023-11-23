@@ -2,7 +2,7 @@
 
 ### Overview
 
-This Streamlit application utilizes a linear regression model trained on a [Kaggle dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset) to predict stroke probability based on user input. Additionally, it provides valuable information and resources on strokes to raise awareness and educate users.
+This Streamlit application utilizes a logistic regression model trained on a [Kaggle dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset) to predict stroke probability based on user input. Additionally, it provides valuable information and resources on strokes to raise awareness and educate users.
 
 ### Features
 
